@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "freefly",
+  "version": "${version}",
+  "name": "freeFly",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/freefly/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.adamcowell14.freefly.FreeflyClient"
+    ],
+    "main": [
+      "net.adamcowell14.freefly.Freefly"
+    ]
+  },
+  "mixins": [
+    "freefly.mixins.json",
+    {
+      "config": "freefly.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric": "*",
+    "minecraft": "1.21"
+  }
+}
